@@ -120,7 +120,18 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if(edge_change)
+	  {
+		  printf("Mudou de estado.\n");
+		  if(HAL_GPIO_ReadPin(IRSensor_GPIO_Port, IRSensor_Pin))
+		  {
+			  printf("Objeto Presente.\n");
+		  }
+		  else {
+			  printf("Nada detetado.\n");
+		  }
+		  edge_change = 0;
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
