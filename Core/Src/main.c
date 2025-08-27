@@ -125,7 +125,7 @@ int main(void)
 		  printf("Mudou de estado.\n");
 		  if(HAL_GPIO_ReadPin(IRSensor_GPIO_Port, IRSensor_Pin))
 		  {
-			  printf("Onjeto Presente.\n");
+			  printf("Objeto Presente.\n");
 		  }
 		  else {
 			  printf("Nada detetado.\n");
